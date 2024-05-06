@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* nav {
+    background-color: red;
+    height: 70px;
+} */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+
+    background-color: black;
+    background: (to bottom, transparent, rgba(0, 0, 0, 0.5)),
+        rgb(44, 42, 42);
+    background-size: 100% 20%, auto;
+    background-position: bottom, center;
+    height: 70px;
+}
+
+nav h2>a {
+    color: white;
+    cursor: pointer;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+
+}
+
+nav .nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    margin-top: 7px;
+
+
+}
+
+nav .nav-links ul a {
+    color: #f4a261;
+    font-family: "Roboto", sans-serif;
+}
+
+nav .nav-links ul a:hover {
+    color: white;
+}
+
+nav .nav-btn {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-btn>#login-btn {
+    padding: 3px 20px;
+    background: #f4a261;
+    border: none;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+
+    font-size: 15px;
+}
+
+nav .nav-btn>#login-btn:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+nav .nav-btn>#signup-btn {
+    padding: 3px 15px;
+    background: #fcbf49;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+nav .nav-btn>#signup-btn:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/dune-3-main-photo.png);
+    background-size: 100%, auto;
+    background-color: black;
+    width: 100vw;
+    height: 545px;
+    background-repeat: no-repeat;
+    background-position: top, center;
+}
+
+main>.main-d-p {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    color: white;
+    /* background-color: red; */
+    width: 100vw;
+    height: calc(100vh - 70px)
+}
+
+
+
+main>.main-d-p p {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+main .main-d-p .main-d-p-container {
+    /* background-color: blue; */
+    transform: translateY(370px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+
+}
+
+main .main-d-p .main-d-p-container .main-d-p-container-btn button {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    /* position: relative; */
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+
+main .main-d-p .main-d-p-container .main-d-p-container-btn button:hover {
+    background-color: #f3f4f6dd;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
